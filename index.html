@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discipulado - Rev. Tércio Cruz Rosa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #121214;
+      --card-bg: #1e1e24;
+      --card-border: #2a2a32;
+      --accent-color: #d4af37;
+      --text-main: #e1e1e6;
+      --text-muted: #a8a8b3;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'EB Garamond', serif;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 2rem;
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .lesson-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: border-color 0.3s ease;
+    }
+
+    .lesson-card:hover {
+      border-color: var(--accent-color);
+    }
+
+    .lesson-header {
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .lesson-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      color: var(--accent-color);
+    }
+
+    .icon {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+      transition: transform 0.3s ease;
+    }
+
+    .lesson-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      background-color: #18181c;
+      padding: 0 1.5rem;
+    }
+
+    .lesson-card.active .lesson-content {
+      padding: 1.5rem;
+      max-height: 2000px;
+    }
+
+    .lesson-card.active .icon {
+      transform: rotate(180deg);
+    }
+
+    .question-item {
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--card-border);
+    }
+
+    .question-item:last-child {
+      border-bottom: none;
+    }
+
+    .study-box {
+      background: #25252d;
+      border-left: 3px solid var(--accent-color);
+      padding: 1rem;
+      margin-top: 1.5rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .study-box p {
+      margin-bottom: 0.3rem;
+    }
+
+    .study-box strong {
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>DISCIPULADO</h1>
+      <p>Curso de Formação e Crescimento Cristão</p>
+      <p><em>Autor: Rev. Tércio Cruz Rosa</em></p>
+    </header>
+
+    <main>
+      <!-- LIÇÃO 1 -->
+      <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson(this)">
+          <span class="lesson-title">Lição 1: Sobre Deus e sobre o Diabo</span>
+          <span class="icon">▼</span>
+        </div>
+        <div class="lesson-content">
+          <div class="question-item">1. Quem é Deus? <em>(S. João 4:24)</em></div>
+          <div class="question-item">2. Quantos Deuses existem? <em>(I Timóteo 2:5)</em></div>
+          <div class="question-item">3. Quem criou Deus? <em>(Apocalipse 22:13)</em></div>
+          <div class="question-item">4. Cite as três Pessoas da Trindade. <em>(S. Mateus 28:19)</em></div>
+          <div class="question-item">5. Qual a principal característica de Deus em relação ao homem? <em>(I João 4:11)</em></div>
+          <div class="question-item">6. Qual é o outro nome do Diabo? <em>(Marcos 3:23)</em></div>
+          <div class="question-item">7. De onde Satanás, que era o anjo Lúcifer, foi expulso? <em>(Lucas 10:18)</em></div>
+          <div class="question-item">8. Qual a criatura de Deus que o Diabo está sempre procurando destruir? <em>(I Pedro 5:8)</em></div>
+          <div class="question-item">9. Por que Satanás cega a mente das pessoas que não conhecem a Cristo? <em>(II Coríntios 4:4)</em></div>
+          <div class="question-item">10. No final de todas as coisas, onde o Diabo será lançado? <em>(Apocalipse 20:10)</em></div>
+          
+          <div class="study-box">
+            <p><strong>Para Meditação:</strong> I Pedro 5:4-11</p>
+            <p><strong>Para Decorar:</strong> I Timóteo 2:5</p>
+            <p><strong>Livros da Bíblia:</strong> Gênesis - Êxodo - Levítico - Números</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIÇÃO 2 -->
+      <div class="lesson-card">
+        <div class="lesson-header" onclick="toggleLesson(this)">
+          <span class="lesson-title">Lição 2: Céu e Inferno</span>
+          <span class="icon">▼</span>
+        </div>
+        <div class="lesson-content">
+          <div class="question-item">1. Como a Bíblia descreve o inferno em Apocalipse 19:20?</div>
+          <div class="question-item">2. Quando a pessoa está no inferno, ela tem condições de ir até o Céu? Por quê? <em>(Lucas 16:26)</em></div>
+          <div class="question-item">3. No dia do juízo final quem será lançado no lago de fogo? <em>(Apocalipse 20:12-15)</em></div>
+          <div class="question-item">4. Para quem o inferno foi preparado? <em>(Mateus 25:41)</em></div>
+          <div class="question-item">5. Por quanto tempo o Diabo será atormentado no inferno? <em>(Apocalipse 20:10)</em></div>
+          <div class="question-item">6. Onde será a futura cidade das pessoas que aceitaram a Cristo? <em>(Filipenses 3:20)</em></div>
+          <div class="question-item">7. Escreva três coisas que não haverá no céu. <em>(Apocalipse 21:4)</em></div>
+          <div class="question-item">8. Quem não habitará no céu? <em>(Apocalipse 21:8)</em></div>
+          <div class="question-item">9. O que Jesus foi preparar no céu para os salvos? <em>(João 14:2)</em></div>
+          <div class="question-item">10. Além da morada o que mais o Cristão receberá no céu? <em>(Lucas 6:23)</em></div>
+          
+          <div class="study-box">
+            <p><strong>Para Meditação:</strong> Apocalipse 21:1-10</p>
+            <p><strong>Para Decorar:</strong> João 14:3</p>
+            <p><strong>Livros da Bíblia:</strong> Deuteronômio - Josué - Juízes - Rute</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Novas lições podem ser adicionadas duplicando a estrutura do bloco acima -->
+    </main>
+  </div>
+
+  <script>
+    function toggleLesson(element) {
+      const card = element.parentElement;
+      card.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
